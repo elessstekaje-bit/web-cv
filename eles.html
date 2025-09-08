@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Curriculum Vitae - ElesssGhifari</title>
+  <link rel="stylesheet" href="eles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="cv-card">
+      <img
+        src="https://files.catbox.moe/o8q5v1.png"
+        alt="Foto Profil"
+        class="profile-img"
+      />
+      <h1>Elesss Ghifari</h1>
+      <p class="subtitle">Frontend Developer | UI/UX Enthusiast</p>
+
+      <section>
+        <h2>Tentang Saya</h2>
+        <p>
+         Saya Hanya Pelajar Yang Hobi Coding DI Waktu Kosong
+        </p>
+      </section>
+
+      <section>
+        <h2>Keterampilan</h2>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>React, Tailwind, Node.js</li>
+          <li>Figma, UX Research</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Kontak</h2>
+        <p>Email: domethode@email.com</p>
+        <p>Telepon: 0856-4879-3830</p>
+      </section>
+
+      <!-- 🎵 Pemutar Musik -->
+      <section>
+        <h2>🎵 Pilih Lagu</h2>
+        <select id="songSelector">
+        <option value="https://files.catbox.moe/g74iko.mp3">Stecu Stecu</option>
+        <option value="https://files.catbox.moe/o8he44.mp3">Kekasih Idaman</option>
+        <option value="https://files.catbox.moe/4zl5e6.mp3">Cinta Dari Seberang</option>
+      </select>
+        <audio id="audioPlayer" controls style="margin-top: 15px; width: 100%;">
+          Browser kamu tidak mendukung audio.
+        </audio>
+      </section>
+
+      <section>
+        <h2>
+          <span class="icon">💬</span> Saran dari Pengunjung
+        </h2>
+        <form id="commentForm">
+          <input
+            type="text"
+            id="name"
+            placeholder="Nama Kamu"
+            required
+            autocomplete="off"
+          />
+          <textarea
+            id="comment"
+            rows="3"
+            placeholder="Tulis sarannya di sini..."
+            required
+          ></textarea>
+          <button type="submit">Kirim</button>
+        </form>
+
+        <div id="commentsContainer"></div>
+      </section>
+    </div>
+  </div>
+
+  <script src="eles.js"></script>
+</body>
+</html>
